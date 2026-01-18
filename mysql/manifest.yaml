@@ -38,7 +38,7 @@ spec:
       - name: mysql
         image: shivanathbabu/mysql:v1
         envFrom:
-        - configMapRef:
+        - secretRef:
             name: mysql
 ---
 apiVersion: v1
