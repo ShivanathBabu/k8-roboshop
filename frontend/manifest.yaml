@@ -105,7 +105,7 @@ spec:
           readOnly: true
       volumes:
         - name: nginx-conf
-          configMapRef:
+          configMap:
             name: nginx-conf
             items:
               - key: nginx.conf
