@@ -18,25 +18,25 @@ metadata:
   name: user
   namespace: roboshop
   labels:
-    component: catalogue
+    component: user
     project: roboshop
     tier: app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      component: catalogue
+      component: user
       project: roboshop
       tier: app
   template:
     metadata:
       labels:
-        component: catalogue
+        component: user
         project: roboshop
         tier: app
     spec:
       containers:
-      - name: catalogue
+      - name: user
         image: shivanathbabu/user:v1
         envFrom:
         - configMapRef:
@@ -53,7 +53,7 @@ metadata:
     tier: app
 spec:
   selector:
-    component: catalogue
+    component: user
     project: roboshop
     tier: app
   ports:
