@@ -31,6 +31,7 @@ metadata:
     project: roboshop
     tier: app
 spec:
+  type: loadBalancer
   selector:
     project: roboshop
     tier: app
